@@ -45,7 +45,7 @@ end
 arbol = FrutalTree.new
 
 th1 = Thread.new do
-    while arbol.age != -1 do
+    while arbol.fruits != -1 do
         arbol.get_old
         print "El arbolito se hizo un poco mas viejo\n"
         sleep 1
@@ -54,14 +54,12 @@ th1 = Thread.new do
 end
 
 th2 = Thread.new do 
-    while arbol.age != -1 do
+    while arbol.fruits >= 0 do
         if arbol.fruits == 0 then
             print "No quedan frutas, a esperar! :D\n"
             sleep 2
        end
-       if arbol.age > 0 then
         print arbol.recolectar_una
-      end
     end
     print "El arbolito murio D:\n"
 end
