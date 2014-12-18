@@ -4,20 +4,34 @@ class FrutalTree
       @age=0
       @height=0
       @fruits=0
+      
+      @life= lambda do |x,y|
+         if(@age>50)
+            @fruits=-1
+         elsif(@age>7)
+            @fruits+=(@age/3)+1
+         end
+      end
+         
    end
+   
    def calculate_oranges
-      yield @age
+      @life.call(@age,@fruits)
    end
+   
    def get_old
       @age +=1
+      @height +=2
       calculate_oranges
    end
+   
    #Se le pasa como argumento un bloque que define la produccion de naranjas en base al año y la vida del arbol
    def life_function (&block)
       @life=block
    end
+   
    def recolectar_una
-      if (@age<0)
+      if (@fruits<0)
          return "Lo sentimos mucho...su arbol ha muerto"
       elsif(@fruits>0)
          @fruits-=1
