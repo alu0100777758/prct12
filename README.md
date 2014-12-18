@@ -1,15 +1,15 @@
-# Simpleselect
+# frutal
 * Coordinador:Javier Martín Hernández 
 * Colaborador: Sabato Ceruso
 * 
-Clase para representar pregunta de seleccion simple de examen
+Clase para representar la vida de un árbol frutal
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simpleselect'
+gem 'frutal'
 ```
 
 And then execute:
@@ -26,10 +26,8 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/simpleselect/fork )
+1. Fork it ( https://github.com/[my-github-username]/prct12/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-[![Coverage Status](https://img.shields.io/coveralls/alu0100777758/prct9.svg)](https://coveralls.io/r/alu0100777758/prct9)
