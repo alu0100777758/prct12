@@ -39,7 +39,7 @@ describe FrutalTree do
            for i in 0..42 do
               @naranjo.get_old
            end
-           @naranjo.recolectar_una.should eq("Lo sentimos mucho...su arbol ha muerto")
+           @naranjo.recolectar_una.should eq("Lo sentimos mucho...su arbol ha muerto\n")
         end
     end
 
